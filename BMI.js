@@ -5,8 +5,7 @@ function calculateBMI() {
 
   // Calculate BMI
   var bmi = weight / (heightInMeters * heightInMeters);
-
-  // Display result
+     // Display result
   var message;
   if (bmi >= 30 && bmi < 31) {
     message = "Your BMI is " + bmi.toFixed(2) + ". Eat once a day and walk, drink plenty of water.";
@@ -25,5 +24,10 @@ function calculateBMI() {
   } else {
     message = "Your BMI is " + bmi.toFixed(2) + ". Hurray, it's party time!";
   }
-  alert(message);
+  // Display result in modal dialog box
+  var resultText = message;
+  var modalContent = '<div class="modal-dialog modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-body"><h1>' + resultText + '</h1></div></div></div>';
+  var modal = $('<div class="modal" tabindex="-1" role="dialog">' + modalContent + '</div>');
+  modal.modal();
+  
 }
