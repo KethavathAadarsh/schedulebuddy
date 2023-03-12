@@ -1,7 +1,7 @@
 function calculateBMI() {
   var age = parseInt(document.getElementById("age").value);
   var weight = parseFloat(document.getElementById("weight").value);
-  var heightInMeters = parseFloat(document.getElementById("height").value);
+  var heightInMeters = parseFloat(document.getElementById("Height").value);
 
   // Calculate BMI
   var bmi = weight / (heightInMeters * heightInMeters);
