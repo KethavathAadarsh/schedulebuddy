@@ -39,7 +39,8 @@
         color: #333;
       }
 
-      .login-box input[type="submit"] {
+      .login-box input[type="submit"],
+      .login-box input[type="button"] {
         width: 100%;
         background-color: #4CAF50;
         color: #fff;
@@ -50,7 +51,8 @@
         cursor: pointer;
       }
 
-      .login-box input[type="submit"]:hover {
+      .login-box input[type="submit"]:hover,
+      .login-box input[type="button"]:hover {
         background-color: #3e8e41;
       }
     </style>
@@ -58,14 +60,23 @@
   <body>
     <div class="login-box">
       <h2>Login to Your Schedule App</h2>
-      <form>
+      <form action="login.php" method="post">
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login">
-        <button onclick="location.href='word-doc.html'">Go to Word Doc Page</button>
+        <input type="submit" name="login" value="Login">
+        <button onclick="location.href='word-doc.html'" type="button">Go to Word Doc Page</button>
+      </form>
+      <br>
+      <hr>
+      <br>
+      <h2>Register for Your Schedule App</h2>
+      <form action="register.php" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        <input type="submit" name="register" value="Register">
       </form>
     </div>
   </body>
 </html>
-
-
