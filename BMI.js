@@ -27,6 +27,8 @@ function calculateBMI() {
     resultText = "Your BMI is " + bmi.toFixed(2) + ".Hmm Hmm nice going Aadarsh Add extra eggs to your diet. it's party time!.";
     } else if (bmi >= 19.5 && bmi < 24) {
     resultText = "Your BMI is " + bmi.toFixed(2) + ".Hmm Hmm nice going Aadarsh Hey Aadarsh!. You are more attractive and confident. Congratulations! you are fit now";
+       } else if ( bmi < 19.5) {
+    resultText = "Your BMI is " + bmi.toFixed(2) + ".Hey Sumit please eat more rice and biryani. Order puffs daily and share for better benefits. Sumit but u are thin";
   } else {
     resultText = "Your BMI is " + bmi.toFixed(2) + ".Hmm Hmm nice going Aadarsh Hurray, it's party time!";
   }
