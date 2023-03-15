@@ -51,10 +51,18 @@
         cursor: pointer;
       }
 
-      .login-box input[type="submit"]:hover,
-      .login-box input[type="button"]:hover {
-        background-color: #3e8e41;
+     .login-box input[type="submit"],
+      .login-box input[type="button"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
       }
+      
     </style>
   </head>
   <body>
@@ -63,7 +71,7 @@
       <form action="login.php" method="post">
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" name="login" value="Login">
+        <input type="submit" name="Register" value="Register Here">
         <input type="submit" name="login" value="Login">
         <button onclick="location.href='word-doc.html'" type="button">Check your BMI here</button>
       </form>
